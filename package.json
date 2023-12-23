@@ -1,0 +1,27 @@
+{
+  "name": "neuron-fac-proof",
+  "version": "1.0.0",
+  "description": "proof system for neuron-fac",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc --build",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
+    "test:coverage": "nyc --reporter=html --reporter=text mocha lib/tests/**/*",
+    "test": "mocha -r ts-node/register test/**/*.spec.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/franckEinstein90/neuron-fac-proof"
+  },
+  "author": "FranckEinstein90",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.3.11",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "^20.10.5",
+    "chai": "^4.3.10",
+    "mocha": "^10.2.0",
+    "ts-node": "^10.9.2",
+    "tslib": "^2.6.2"
+  }
+}
